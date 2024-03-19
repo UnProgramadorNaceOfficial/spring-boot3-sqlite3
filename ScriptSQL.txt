@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS usuarios (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	name VARCHAR(30),
+	last_name VARCHAR(30),
+	age INTEGER,
+	email VARCHAR(60)
+);
+
+
+INSERT INTO usuarios(name, last_name, age, email) VALUES ('Elena', 'Rodriguez', 32, 'elena.rodriguez@example.com');
+INSERT INTO usuarios(name, last_name, age, email) VALUES ('Carlos', 'Fernandez', 28, 'carlos.fernandez@example.net');
+INSERT INTO usuarios(name, last_name, age, email) VALUES ('María', 'Gonzalez', 35, 'maria.gonzalez@example.org');
+INSERT INTO usuarios(name, last_name, age, email) VALUES ('Juan', 'Perez', 40, 'juan.perez@example.co');
+INSERT INTO usuarios(name, last_name, age, email) VALUES ('Ana', 'Lopez', 26, 'ana.lopez@example.io');
+
+SELECT * FROM usuarios;
